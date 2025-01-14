@@ -1,10 +1,6 @@
 /** @format */
-
 "use client";
-
 import Link from "next/link";
-import { LucideIcon } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -24,8 +20,6 @@ interface NavProps {
     href: string;
   }[];
 }
-
-
 
 export function Nav({ links, isCollapsed }: NavProps) {
   const pathName = usePathname();
@@ -98,8 +92,7 @@ export function Nav({ links, isCollapsed }: NavProps) {
               </Link>
             )
           )}
-        </nav>
-        
+        </nav>   
       </div>
     </TooltipProvider>
   );

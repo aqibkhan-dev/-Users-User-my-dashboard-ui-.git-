@@ -3,9 +3,9 @@ import Image from 'next/image'
 import React from 'react'
 
 
-type Props = {}
+// type Props = {}
 
-export default function Right ({}: Props) {
+export default function Right () {
   return (
     <>
       <div className='bg-[#c4e0eb] h-[100vh] rounded-r-lg lg:h-[100%]'>

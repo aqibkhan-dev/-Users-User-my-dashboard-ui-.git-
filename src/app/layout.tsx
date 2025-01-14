@@ -5,8 +5,6 @@ import { cn } from '@/lib/utils'
 import Right from '@/components/Right'
 import { ClerkProvider, SignedIn, SignedOut, SignIn } from '@clerk/nextjs'
 
-
-
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin']
@@ -39,27 +37,19 @@ export default function RootLayout ({
             }
           )}
         >
-          {/* sidebar */}
-          {/* <p classNameName="border">Sidebar</p> */}
-          {/* main page */}
-          {/* <SideNavbar  /> */}
           <>
-            
-              <div>
-                <div className='p-8 w-full h-full flex'>
-                  <SignedOut>
-                    <SignIn routing='hash' />
-                  </SignedOut>
-                  <SignedIn>
+            <div>
+              <div className='p-8 w-full h-full flex'>
+                <SignedOut>
+                  <SignIn routing='hash' />
+                </SignedOut>
+                <SignedIn>
                   {children}
                   <Right />
-                  </SignedIn>
-                </div>
-                <div>
-                 
-                </div>
+                </SignedIn>
               </div>
-            
+              <div></div>
+            </div>
           </>
         </body>
       </html>

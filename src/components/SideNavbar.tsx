@@ -1,16 +1,8 @@
 /** @format */
 'use client'
-
 import { useState } from 'react'
-
-type Props = {}
-
 import { useWindowWidth } from '@react-hook/window-size'
-import { Button } from './ui/button'
-import { ChevronRight } from 'lucide-react'
-import { Nav } from './ui/nav'
-
-export default function SideNavbar ({}: Props) {
+export default function SideNavbar () {
   const [isCollapsed, setIsCollapsed] = useState(false)
 
   const onlyWidth = useWindowWidth()
@@ -36,7 +28,6 @@ export default function SideNavbar ({}: Props) {
         <div className='flex flex-col h-[93%] ml-2 mt-2 justify-between bg-[#040516] rounded-lg items-center text-[#f6f6ff] p-1 font-bold'>
           <div className='flex flex-col gap-5 cursor-pointer text-lg items-center'>
             <p className='mt-10 mb-12'>dappr</p>
-
             <div className='mb-3'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -79,7 +70,6 @@ export default function SideNavbar ({}: Props) {
                 <rect x='7' y='8' width='4' height='9' rx='1' />
               </svg>
             </div>
-
             <div className='mb-3'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -101,7 +91,6 @@ export default function SideNavbar ({}: Props) {
                 <polygon points='12 2 20 7 4 7' />
               </svg>
             </div>
-
             <div className='mb-3'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -137,7 +126,6 @@ export default function SideNavbar ({}: Props) {
                 <path d='m9 8 6 4-6 4Z' />
               </svg>
             </div>
-
             <div className='mb-3'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -157,7 +145,6 @@ export default function SideNavbar ({}: Props) {
                 <path d='M16 3.13a4 4 0 0 1 0 7.75' />
               </svg>
             </div>
-
             <div className='mb-3'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -178,7 +165,6 @@ export default function SideNavbar ({}: Props) {
                 <path d='M16 17H8' />
               </svg>
             </div>
-
             <div className='mb-3'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -223,13 +209,13 @@ export default function SideNavbar ({}: Props) {
   )
 }
 
-{
+
   /* <div className='dot'>
   <span className='status red'></span>
   <span className='status yellow'></span>
   <span className='status green'></span>
 </div> */
-}
+
 
 // {!mobileWidth && (
 //   <div className='absolute right-[-20px] top-7'>
