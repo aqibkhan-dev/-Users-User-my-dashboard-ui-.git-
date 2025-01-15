@@ -6,8 +6,8 @@ import React from 'react'
 export default function Right () {
   return (
     <>
-      <div className='bg-[#c4e0eb] h-[100vh] rounded-r-lg lg:h-[100%]'>
-        <div className='flex gap-5 items-center h-[10%] mt-7'>
+      <div className='bg-[#c4e0eb] min-h-[100vh] rounded-r-lg lg:h-[100%] md:h-full'>
+        <div className='flex gap-5 items-center h-[10%]'>
           <svg
             className='w-5'
             xmlns='http://www.w3.org/2000/svg'
