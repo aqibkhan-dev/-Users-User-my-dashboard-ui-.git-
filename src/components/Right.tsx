@@ -1,7 +1,5 @@
-
 import Image from 'next/image'
 import React from 'react'
-
 
 // type Props = {}
 
@@ -9,7 +7,7 @@ export default function Right () {
   return (
     <>
       <div className='bg-[#c4e0eb] h-[100vh] rounded-r-lg lg:h-[100%]'>
-        <div className='flex gap-5 items-center h-[10%]'>
+        <div className='flex gap-5 items-center h-[10%] mt-7'>
           <svg
             className='w-5'
             xmlns='http://www.w3.org/2000/svg'
@@ -32,23 +30,44 @@ export default function Right () {
             <path d='M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416l384 0c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8l0-18.8c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z' />
           </svg>
           <div className='flex relative'>
-          <Image
-            className='rounded-[50%] object-cover m-3'
-            alt='server image'
-            src={'/images/1.jpg'}
-            height={100}
-            width={40}
-          />
-          <svg className='w-3 absolute left-14 top-5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            <Image
+              className='rounded-full w-10 h-10 object-cover m-3'
+              alt='server image'
+              src={'/images/1.jpg'}
+              height={40}
+              width={40}
+            />
+            <svg
+              className='w-3 absolute left-14 top-5'
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 512 512'
+            >
+              <path d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z' />
+            </svg>
           </div>
         </div>
 
-        <div className='h-[40%] mt-40'>
+        <div className='h-[40%] mt-12'>
           <div className='flex flex-col justify-evenly h-80 pl-10  '>
             <h3 className='font-bold'>Your to-Do list</h3>
             <div className='flex items-center'>
               <div className='bg-black text-white rounded-lg p-1 text-center mr-3'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-receipt"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/></svg>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  className='lucide lucide-receipt'
+                >
+                  <path d='M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z' />
+                  <path d='M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8' />
+                  <path d='M12 17.5v-11' />
+                </svg>
               </div>
               <div className='line-clamp-2'>
                 <p className='font-semibold'>Run payroll</p>
@@ -57,7 +76,21 @@ export default function Right () {
             </div>
             <div className='flex items-center'>
               <div className='bg-black text-white rounded-lg p-1 text-center mr-3'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  className='lucide lucide-clock'
+                >
+                  <circle cx='12' cy='12' r='10' />
+                  <polyline points='12 6 12 12 16 14' />
+                </svg>
               </div>
               <div className='line-clamp-2'>
                 <p className='font-semibold'>Review time off request</p>
@@ -67,7 +100,23 @@ export default function Right () {
 
             <div className='flex items-center'>
               <div className='bg-black text-white rounded-lg p-1 text-center mr-3'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-clipboard-pen"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5.5"/><path d="M4 13.5V6a2 2 0 0 1 2-2h2"/><path d="M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  className='lucide lucide-clipboard-pen'
+                >
+                  <rect width='8' height='4' x='8' y='2' rx='1' />
+                  <path d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5.5' />
+                  <path d='M4 13.5V6a2 2 0 0 1 2-2h2' />
+                  <path d='M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z' />
+                </svg>
               </div>
               <div className='line-clamp-2'>
                 <p className='font-semibold'>Sign board resolution</p>
@@ -77,7 +126,21 @@ export default function Right () {
 
             <div className='flex items-center'>
               <div className='bg-black text-white rounded-lg p-1 text-center mr-3'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-book-check"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><path d="m9 9.5 2 2 4-4"/></svg>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  className='lucide lucide-book-check'
+                >
+                  <path d='M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20' />
+                  <path d='m9 9.5 2 2 4-4' />
+                </svg>
               </div>
               <div className='line-clamp-2'>
                 <p className='font-semibold'>Finish onboarding Tony</p>
@@ -92,7 +155,8 @@ export default function Right () {
             <div className='leading-10'>
               <h4 id='title'>Board meeting</h4>
               <p className='text-[#9e9eaa] text-sm'>
-                <p className='inline-block bg-[#66e19d] rounded-full h-3 w-3 mr-2'></p>Feb 22 at 6:00 PM
+                <p className='inline-block bg-[#66e19d] rounded-full h-3 w-3 mr-2'></p>
+                Feb 22 at 6:00 PM
               </p>
             </div>
             <p className='text-[#9e9eaa] text-sm pl-5'>

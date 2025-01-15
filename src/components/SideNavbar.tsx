@@ -1,16 +1,10 @@
 /** @format */
 'use client'
-import { useState } from 'react'
-import { useWindowWidth } from '@react-hook/window-size'
+
 export default function SideNavbar () {
-  const [isCollapsed, setIsCollapsed] = useState(false)
 
-  const onlyWidth = useWindowWidth()
-  const mobileWidth = onlyWidth < 768
 
-  function toggleSidebar () {
-    setIsCollapsed(!isCollapsed)
-  }
+
 
   return (
     <>
@@ -217,43 +211,4 @@ export default function SideNavbar () {
 </div> */
 
 
-// {!mobileWidth && (
-//   <div className='absolute right-[-20px] top-7'>
-//     <Button
-//       onClick={toggleSidebar}
-//       variant='secondary'
-//       className=' rounded-full p-2'
-//     >
-//       <ChevronRight />
-//     </Button>
-//   </div>
-// )}
-// <Nav
-//   isCollapsed={mobileWidth ? true : isCollapsed}
-//   links={[
-//     {
-//       title: 'Dashboard',
-//       href: '/',
 
-//       variant: 'default'
-//     },
-//     {
-//       title: 'Users',
-//       href: '/users',
-
-//       variant: 'ghost'
-//     },
-//     {
-//       title: 'Ordrs',
-//       href: '/orders',
-
-//       variant: 'ghost'
-//     },
-//     {
-//       title: 'Settings',
-//       href: '/settings',
-
-//       variant: 'ghost'
-//     }
-//   ]}
-// />

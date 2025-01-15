@@ -85,7 +85,7 @@ export default function Email () {
           <TableBody>            
             <TableRow> 
               <Image
-                className='rounded-[50%] object-cover m-3'
+                className='rounded-full w-10 h-10 object-cover m-3'
                 alt='server image'
                 src={'/images/1.jpg'}
                 height={100}
@@ -99,7 +99,7 @@ export default function Email () {
           <TableBody>
             <TableRow>
               <Image
-                className='rounded-[50%] object-cover m-3'
+                className='rounded-full w-10 h-10 object-cover m-3'
                 alt='server image'
                 src={'/images/2.jpg'}
                 height={100}
@@ -113,7 +113,7 @@ export default function Email () {
           <TableBody>
             <TableRow>
               <Image
-                className='rounded-[50%] object-cover m-3'
+                className='rounded-full  w-10 h-10  object-cover m-3'
                 alt='server image'
                 src={'/images/3.jpg'}
                 height={100}
@@ -127,7 +127,7 @@ export default function Email () {
           <TableBody>
             <TableRow>
               <Image
-                className='rounded-[50%] object-cover m-3'
+                className='rounded-full w-10 h-10  object-cover m-3'
                 alt='server image'
                 src={'/images/4.jpg'}
                 height={100}
