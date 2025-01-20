@@ -1,9 +1,6 @@
 /** @format */
 'use client'
 
-import { ChevronRight } from 'lucide-react'
-import { Button } from './ui/button'
-
 export default function SideNavbar () {
   return (
     <>
