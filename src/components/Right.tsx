@@ -4,6 +4,7 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
 import { Button } from './ui/button'
 import { ChevronDown } from 'lucide-react'
 import { Progress } from './ui/progress'
+import { UserButton } from '@clerk/nextjs'
 
 // type Props = {}
 
@@ -41,6 +42,7 @@ export default function Right () {
               height={40}
               width={40}
             />
+            <UserButton/>
             <HoverCard>
               <HoverCardTrigger asChild>
            <div className='absolute left-14 top-5 '>
