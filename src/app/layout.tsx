@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { cn } from '@/lib/utils'
 
-import { ClerkProvider, SignedIn, SignedOut, SignIn, UserButton } from '@clerk/nextjs'
+import { ClerkProvider, SignedIn, SignedOut, SignIn} from '@clerk/nextjs'
 
 
 // const geistSans = Geist({
@@ -45,7 +45,7 @@ export default function RootLayout ({
                   <SignIn routing='hash' />
                 </SignedOut>
                 <SignedIn>
-                  <UserButton/>
+                  
                   {children}
                   
                 </SignedIn>

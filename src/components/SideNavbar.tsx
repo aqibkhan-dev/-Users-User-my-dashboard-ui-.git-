@@ -1,6 +1,16 @@
 /** @format */
 'use client'
 
+import { ChevronRight } from "lucide-react"
+import { Button } from "./ui/button"
+
+
+
+
+
+
+
+
 export default function SideNavbar () {
   return (
     <>
@@ -18,7 +28,8 @@ export default function SideNavbar () {
           <div className='flex flex-col gap-5 cursor-pointer text-lg items-center'>
             <p className='mt-10 mb-12'>dappr</p>
             <div className='mb-3'>
-              <svg
+             
+             <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
                 height='24'
