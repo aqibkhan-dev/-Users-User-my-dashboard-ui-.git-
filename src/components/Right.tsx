@@ -1,12 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
+import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
+import { Button } from './ui/button'
+import { ChevronDown } from 'lucide-react'
+import { Progress } from './ui/progress'
 
 // type Props = {}
 
 export default function Right () {
   return (
     <>
-      <div className='bg-[#c4e0eb] min-h-[100vh] rounded-r-lg lg:h-[100%] md:h-full'>
+      <div className='bg-[#c4e0eb] min-h-[100vh] rounded-r-lg lg:h-[100%] '>
         <div className='flex gap-5 items-center h-[10%]'>
           <svg
             className='w-5'
@@ -37,17 +41,33 @@ export default function Right () {
               height={40}
               width={40}
             />
-            <svg
-              className='w-3 absolute left-14 top-5'
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 512 512'
-            >
-              <path d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z' />
-            </svg>
+            <HoverCard>
+              <HoverCardTrigger asChild>
+           <div className='absolute left-14 top-5 '>
+           <ChevronDown/>
+           </div>
+              </HoverCardTrigger>
+              <HoverCardContent className='w-60'>
+                <div className='flex justify-between space-x-4'>
+                  <div className='space-y-1'>
+                    <h4 className='text-sm font-semibold'>Formation status</h4>
+                    <p className='text-sm'>
+                      in progress
+                    </p>
+                    <Progress />
+
+                      <Button className='text-xs text-muted-foreground bg-[#d3e5ed]'>
+                        View status
+                      </Button>
+                    
+                  </div>
+                </div>
+              </HoverCardContent>
+            </HoverCard>
           </div>
         </div>
 
-        <div className='h-[40%] mt-12'>
+        <div className='h-[40%] mt-28'>
           <div className='flex flex-col justify-evenly h-80 pl-10  '>
             <h3 className='font-bold'>Your to-Do list</h3>
             <div className='flex items-center'>

@@ -1,18 +1,16 @@
 /** @format */
 'use client'
 
+import { ChevronRight } from 'lucide-react'
+import { Button } from './ui/button'
+
 export default function SideNavbar () {
-
-
-
-
   return (
     <>
-      {/* <div className='relative min-w-[80px] px-3 pb-10'> */}
-        {/* <div className='absolute right-[-20px] top-7'>
-          //{' '}
+      {/* <div className='relative min-w-[80px] px-3 pb-10'>
+        <div className='absolute right-[-20px] top-7'>
           <Button
-            onClick={toggleSidebar}
+            //  onClick={toggleSidebar}
             variant='secondary'
             className='rounded-full p-2'
           >
@@ -202,13 +200,3 @@ export default function SideNavbar () {
     </>
   )
 }
-
-
-  /* <div className='dot'>
-  <span className='status red'></span>
-  <span className='status yellow'></span>
-  <span className='status green'></span>
-</div> */
-
-
-

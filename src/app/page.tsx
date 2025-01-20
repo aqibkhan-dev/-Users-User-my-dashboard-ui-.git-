@@ -6,6 +6,7 @@ import Card, { CardProps } from '@/components/Card'
 import BarChart from '@/components/BarChart'
 import Email from '@/components/Email'
 import SideNavbar from '@/components/SideNavbar'
+import Right from '@/components/Right'
 
 const cardData: CardProps[] = [
   {
@@ -37,10 +38,12 @@ const cardData: CardProps[] = [
 export default function Home () {
   return (
     <>
+      <div className='flex'>
+        
       <div className='bg-[#c4e0eb] p-10 rounded-tl-lg rounded-bl-lg'>
         <SideNavbar />
       </div>
-      <div className='flex flex-col gap-5 bg-[#c4e0eb] p-4  rounded-bl-none  rounded-tr-none  w-[70%]'>
+      <div className='flex flex-col gap-5 bg-[#c4e0eb] p-4 rounded-bl-none rounded-tr-none'>
         <PageTitle title='Good morning, James' />
 
         <section className='grid w-full grid-cols-1 gap-4 gap-x-8  transition-all sm:grid-cols-2 xl:grid-cols-4 '>
@@ -54,9 +57,9 @@ export default function Home () {
             />
           ))}
         </section>
-        <section className='flex gap-9'>
+        <section className='grid grid-cols-2 gap-6 lg:grid-cols-3 xl:grid-cols-3'>
           
-            <div className='flex flex-col w-[205px] gap-4'>
+            <div className='flex gap-3 min-w-[200px] lg:flex-col '>
               <div className='shadow-md p-6 rounded-lg bg-[#d3e5ed]'>
                 <h1 className='font-medium'>New client</h1>
                 <div className='flex justify-between'>
@@ -80,7 +83,7 @@ export default function Home () {
        
 
           <div className='shadow-lg rounded-lg col-span-2 bg-[#d3e5ed]'>
-            <div className='flex justify-between items-center'>
+            <div className='flex justify-between items-center '>
               <h2 className='p-4 font-semibold'>Revenue</h2>
               <p className='pr-1'>Last 7 days VS prior week</p>
             </div>
@@ -89,6 +92,8 @@ export default function Home () {
         </section>
 
         <Email />
+      </div>
+      <Right/>
       </div>
     </>
   )
